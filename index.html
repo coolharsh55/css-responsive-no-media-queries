@@ -1,0 +1,38 @@
+<style type="text/css">
+  .responsive-grid {
+    display: grid;
+    grid-gap: 20px;
+    margin-bottom: 20px;
+    }
+  #grid1 {
+    /* min size for box is 200px */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  #grid2 {
+    /* min size for box is 400px */
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+  .box {
+    background: black;
+    color: white;
+    padding: 5rem 1rem;
+    text-align: center;
+    }
+</style>
+
+<div id="grid1" class="responsive-grid">
+  <div class="box"><p>#1</p></div>
+  <div class="box"><p>#2</p></div>
+  <div class="box"><p>#3</p></div>
+  <div class="box"><p>#4</p></div>
+  <div class="box"><p>#5</p></div>
+  <div class="box"><p>#6</p></div>
+</div>
+<div id="grid2" class="responsive-grid">
+  <div class="box"><p>#A</p></div>
+  <div class="box"><p>#B</p></div>
+  <div class="box"><p>#C</p></div>
+  <div class="box"><p>#E</p></div>
+  <div class="box"><p>#F</p></div>
+  <div class="box"><p>#G</p></div>
+</div>
